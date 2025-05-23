@@ -136,6 +136,8 @@ const Add = ({ token }) => {
             <option value="waxing">Waxing</option>
             <option value="manicure-pedicure">Manicure</option>
             <option value="bleach">Bleach</option>
+            <option value="D-tan">Bleach-D-tan</option>
+            <option value="Clean-up">Bleach-Clean-up</option>
             <option value="combo">Combo</option>
           </select>
         </div>
