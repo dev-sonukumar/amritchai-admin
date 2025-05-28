@@ -13,7 +13,7 @@ const Add = ({ token }) => {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
   const [price, setPrice] = useState("");
-  const [category, setCategory] = useState("makeup");
+  const [category, setCategory] = useState("classic");
   const [subCategory, setSubCategory] = useState("Topwear");
   const [bestseller, setBestseller] = useState(false);
   const [sizes, setSizes] = useState([]);
@@ -129,15 +129,13 @@ const Add = ({ token }) => {
             className="w-full px-3 py-2"
             value={category}
           >
-            <option value="hair-style">Hair-Style</option>
-            <option value="makeup">Makeup</option>
-            <option value="threading">Threading</option>
-            <option value="facial">Facial</option>
-            <option value="waxing">Waxing</option>
-            <option value="manicure-pedicure">Manicure</option>
-            <option value="bleach">Bleach</option>
-            <option value="D-tan">Bleach-D-tan</option>
-            <option value="Clean-up">Bleach-Clean-up</option>
+            <option value="masala">Masala Tea</option>
+            <option value="elaichi">Elaichi Tea</option>
+            <option value="ginger">Ginger Tea</option>
+            <option value="classic">Chocolate Tea</option>
+            <option value="classic">Classic Tea</option>
+
+            {/* <option value="makeup">Makeup</option> */}
             <option value="combo">Combo</option>
           </select>
         </div>
