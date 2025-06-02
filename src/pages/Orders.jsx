@@ -103,7 +103,7 @@ const Orders = ({ token }) => {
                 Items : {order.items.length}
               </p>
               <p className="mt-3">Method : {order.paymentMethod}</p>
-              <p>Payment : {order.payment ? "Done" : "Pending"}</p>
+              <p>Payment : {order.payment ? "Done" : "Order Placed"}</p>
               <p>Date : {new Date(order.date).toLocaleDateString()}</p>
             </div>
             <p className="text-sm sm:text-[15px]">
@@ -115,9 +115,9 @@ const Orders = ({ token }) => {
               value={order.status}
               className="p-2 font-semibold"
             >
-              <option value="Pending">Pending</option>
-              <option value="Confirmed">Confirmed</option>
-              <option value="In Progress">In Progress</option>
+              <option value="Order Placed">Order Placed</option>
+              <option value="Processing">Processing</option>
+              <option value="In Transit">In Transit</option>
               <option value="Completed">Completed</option>
               <option value="Cancelled">Cancelled</option>
             </select>
